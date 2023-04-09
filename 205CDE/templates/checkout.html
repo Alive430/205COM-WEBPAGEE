@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I am an alcholic">
+    <meta name="author" content="Kanade(LWT)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <title>Cocktail Talk</title>
+
+
+</head>
+
+<body>
+    <div class="checkout">
+    <header>
+        <div class="CON">
+            <div id="choice">
+                <h1>FunCocktail<i class="fas fa-tag"></i></h1>
+            </div>
+        </div>
+    </header>
+
+<input type="checkbox" name="" id="check">
+<div class="container" >
+    <label for="check">
+        <span class="fas fa-times" id="times"></span>
+        <span class="fas fa-bars" id="bars"></span>
+    </label>
+    <div class="head">MENU</div>
+    <ol>
+        <li><a href="home"><i class="fas fa-home"></i>HOME</a></li>
+        <li><a href="about"><i class="fas fa-info"></i>About</a></li>
+        <li><a href="news"><i class="fas fa-newspaper"></i>News</a></li>
+        <li><a href="checkout"><i class="fas fa-car"></i>CheckOut</a></li>
+        <li><a href="design"><i class="fas fa-pen"></i>Design</a></li>
+        <li><a href="help"><i class="fas fa-comment"></i>Help</a></li>
+        <li><a href="login1"><i class="fas fa-user"></i>User</a></li>
+    </ol>
+</div>
+	<ul>
+        <section class="products">
+        <article class="product" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2v-Kq4F3wcXbDUeoHO7P1IGll1GjxYIZ5SUSMgUYjtv8PFFJooiAzvSd4esEbx0aMlD0&usqp=CAU/" alt="Product Image" width="200" height="150">
+		    <li><span>Margarita</span><button onclick="addItem('Margarita', 40)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://cdn.diffords.com/contrib/stock-images/2021/09/6139fe39a757e.jpg" alt="Product Image" width="200" height="150">
+		    <li><span>manhattan</span><button onclick="addItem('manhattan', 30)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://i2.wp.com/dishesdelish.com/wp-content/uploads/2018/08/Mojito-Cocktail-Recipe-Square-1.jpg" alt="Product Image" width="200" height="150">
+		    <li><span>Mojito</span><button onclick="addItem('Mojito', 28)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://images.food52.com/Cljq-CMmcyC5y9vRxFRIz1Jx6DM=/1200x900/b606dd52-f58f-4550-a098-7001e8e3381e--2021-0611_blue-hawaii_3x2_julia-gartland_108.jpg" alt="Product Image" width="200" height="150">
+		    <li><span>Blue Hawaii</span><button onclick="addItem('Blue Hawaii', 30)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://assets.epicurious.com/photos/5e41a6d175661800087cc87c/5:4/w_3923,h_3138,c_limit/OldFashioned_HERO_020520_619.jpg" alt="Product Image" width="200" height="150">
+		    <li><span>Old Fashioned</span><button onclick="addItem('Old Fashioned', 40)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://www.acouplecooks.com/wp-content/uploads/2019/12/Cosmopolitan-Cocktail-006.jpg" alt="Product Image" width="200" height="150">
+		    <li><span>Cosmopolitan</span><button onclick="addItem('Cosmopolitan', 20)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/classic-lime-daiquiri-cocktail-royalty-free-image-1581775790.jpg?crop=0.667xw:1.00xh;0.224xw,0&resize=1200:*" alt="Product Image" width="200" height="150">
+		    <li><span>Daiquiri</span><button onclick="addItem('Daiquiri', 34)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://www.supergoldenbakes.com/wordpress/wp-content/uploads/2019/07/Long_island_iced_tea-1-4s.jpg" alt="Product Image" width="200" height="150">
+		    <li><span>Long Island Iced Tea</span><button onclick="addItem('Long Island Iced Tea', 45)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://havana-club.com/wp-content/uploads/2020/10/04_HC3_PINACOLADA_0275_BASE.png" alt="Product Image" width="200" height="150">
+		    <li><span>Pina Colada</span><button onclick="addItem('Pina Colada', 28)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://img.jamieoliver.com/jamieoliver/recipe-database/oldImages/large/1202_1_1439206245.jpg?tr=w-800,h-1066" alt="Product Image" width="200" height="150">
+		    <li><span>Bloody Mary</span><button onclick="addItem('Bloody Mary', 10)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://bakeitwithlove.com/wp-content/uploads/2022/07/Moscow-Mule-sq.jpg" alt="Product Image" width="200" height="150">
+		    <li><span>Moscow Mule</span><button onclick="addItem('Moscow Mule', 32)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://assets.bacardicontenthub.com/transform/97406ce1-0aaa-4811-b1d5-a3a1c1954f5f/FY22_St-Germain_Marketing_Asset_FrenchieNegroni_ZIC?io=transform:fit,width:500,height:625&format=png&quality=95" alt="Product Image" width="200" height="150">
+		    <li><span>Negroni</span><button onclick="addItem('Negroni', 30)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://cdn.diffords.com/contrib/stock-images/2016/1/48/201640b7a2c6da92a6a88fe29d1d6086ba08.jpg" alt="Product Image" width="200" height="150">
+		    <li><span>Tom Collins</span><button onclick="addItem('Tom Collins', 30)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Sidecar-cocktail.jpg" alt="Product Image" width="200" height="150">
+		    <li><span>sidecar</span><button onclick="addItem('sidecar', 30)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://media.istockphoto.com/id/1282428626/vector/watercolor-bellini-cocktail-with-peach-slice-isolated-on-white-background-watercolour-drink.jpg?s=612x612&w=0&k=20&c=TyZ5YoMYkPHTO7vo6kKwrHr9Bb3GUHfNTIhjTKR-jTI=" alt="Product Image" width="200" height="150">
+		    <li><span>Bellini</span><button onclick="addItem('Bellini', 20)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://img.freepik.com/premium-photo/sex-beach-cocktail-glass-white_123827-8967.jpg?w=2000" alt="Product Image" width="200" height="150">
+		    <li><span>Sex On The Beach</span><button onclick="addItem('Sex On The Beach', 40)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://img.delicious.com.au/s_mk-lKm/del/2020/12/whiskey-sour-143899-1.jpg" alt="Product Image" width="200" height="150">
+		    <li><span>whiskey sour</span><button onclick="addItem('whiskey sour', 50)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://www.liquor.com/thmb/1ZharnCZtEmyUkKfEm8dh07MV8g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/aperol-spritz-720x720-primary-985457b239d7427da2f8b4be17131caa.jpg" alt="Product Image" width="200" height="150">
+		    <li><span>Aperol Spritz</span><button onclick="addItem('Aperol Spritz', 28)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://www.liquor.com/thmb/dxEIgDSkmAAUbWzJ9yi8Ws_J-v8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mai-tai-720x720-primary-e09e24f1cacd4b3896f5aa32ba51dcdd.jpg" alt="Product Image" width="200" height="150">
+		    <li><span>Mai Tai</span><button onclick="addItem('Mai Tai', 37)">Add to cart</button></li>
+        </article>
+        <article class="product" >
+            <img src="https://assets-prd.punchdrink.com/wp-content/uploads/2021/04/21163547/Article-Espresso-Martini-Coffee-Cocktail-Recipe.jpg" alt="Product Image" width="200" height="150">
+		    <li><span>Espresso Martini</span><button onclick="addItem('Espresso Martini', 35)">Add to cart</button></li>
+        </article>
+        </section>
+
+
+
+
+	</ul>
+
+	<ul id="item-list"></ul>
+	<p>Total cost: $<span id="total-cost">0</span></p>
+	<button onclick="checkout()">Checkout</button>
+    
+    
+    </div>
+    
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    /*Global*/
+    .CON{
+        width:80%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    /*header**/
+    header{
+        background-color: rgb(36, 34, 34);
+        color: ghostwhite;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom:  rgb(58, 218, 242) 5px solid;
+    }
+
+    header h1{
+        color: rgb(255, 255, 255)230;
+        text-decoration: none;
+        font-size: 30px
+    }
+    header .highlight h1{
+        color: aqua;
+        font-weight: bold;
+        font-size: 16px;
+        float:right;
+    }
+
+    header #choice{
+        float:right;
+    }
+
+
+    header #choice h1{
+        margin: 0;
+    }
+
+    /*body*/
+    body{
+        overflow:auto;
+    }
+
+    .container{
+        height: 100%;
+        width: 200px;
+        position: absolute;
+        background: #161616;
+        z-index: 1;
+        transition: 0.5s ease;
+        transform: translateX(-200px);
+    }
+
+    .container .head{
+        color:coral;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+        background: linear-gradient(30deg, #67595f,#ffffff)
+    }
+
+    .container ol{
+        width:100%;
+        list-style: none;
+    }
+
+    .container ol li{
+        display: block;
+        width: 100%;
+    }
+
+    .container ol li a{
+        color: #fbfdce;
+        padding: 15px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+        letter-spacing: 1px;
+        position: relative;
+        transition: 0.3s;
+        overflow: hidden;
+        text-transform: capitalize;
+    }
+
+    .container ol li a i{
+        width: 70px;
+        font-size: 25px;
+        text-align: center;
+        padding-left: 30px; 
+    }
+
+    .container ol li:hover a{
+        background: #030303;
+        color: #00eaff;
+        letter-spacing: 5px;
+    }
+
+     input{
+        appearance: none;
+        visibility: hidden;
+        display: none;
+    }
+
+    .container span{
+        position: absolute;
+        right: -40px;
+        top: 30px;
+        font-size: 25px;
+        border-radius: 3px;
+        color: #fff;
+        padding: 3px 8px;
+        cursor: pointer;
+        background: #000;
+
+    }
+
+    #bars{
+        background: rgb(15, 14, 14);
+    }
+
+    #check:checked ~ .container{
+        transform: translateX(0);
+    }
+
+    #check:checked ~ .container #bars{
+        display: none;
+    }
+
+
+
+    .product {
+        flex-basis: 100%;
+        max-width: 250px;
+        margin: 1rem;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 4px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+        .products {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+    }
+
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+		let items = [];
+
+		function addItem(name, price) {
+			items.push({name: name, price: price});
+			showItems();
+			updateTotalCost();
+		}
+
+		function removeItem(index) {
+			items.splice(index, 1);
+			showItems();
+			updateTotalCost();
+		}
+
+		function showItems() {
+			let itemList = document.getElementById("item-list");
+			itemList.innerHTML = "";
+			for (let i = 0; i < items.length; i++) {
+				let item = items[i];
+				let li = document.createElement("li");
+				li.innerHTML = item.name + " ($" + item.price + ") <button onclick=\"removeItem(" + i + ")\">Remove</button>";
+				itemList.appendChild(li);
+			}
+		}
+
+		function updateTotalCost() {
+			let totalCost = 0;
+			for (let i = 0; i < items.length; i++) {
+				totalCost += items[i].price;
+			}
+			document.getElementById("total-cost").innerHTML = totalCost;
+		}
+
+		function checkout() {
+			alert("Thank you for your purchase!");
+			items = [];
+			showItems();
+			updateTotalCost();
+		}
+	</script>
+</body>
+</html>

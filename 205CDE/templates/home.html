@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I am an alcholic">
+    <meta name="author" content="Kanade(LWT)">
+    <link rel="stylesheet" type= "text/css" href="index(ver3).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <title>Cocktail Talk</title>
+</head>
+<body>
+    <div class="home">
+    <header>
+        <div class="CON">
+            <div id="choice">
+                <h1>FunCocktail<i class="fas fa-tag"></i></h1>
+            </div>
+        </div>
+    </header>
+
+<input type="checkbox" name="" id="check">
+<div class="container" >
+    <label for="check">
+        <span class="fas fa-times" id="times"></span>
+        <span class="fas fa-bars" id="bars"></span>
+    </label>
+    <div class="head">MENU</div>
+    <ol>
+        <li><a href="home"><i class="fas fa-home"></i>HOME</a></li>
+        <li><a href="about"><i class="fas fa-info"></i>About</a></li>
+        <li><a href="news"><i class="fas fa-newspaper"></i>News</a></li>
+        <li><a href="checkout"><i class="fas fa-car"></i>CheckOut</a></li>
+        <li><a href="design"><i class="fas fa-pen"></i>Design</a></li>
+        <li><a href="help"><i class="fas fa-comment"></i>Help</a></li>
+        <li><a href="login1"><i class="fas fa-user"></i>User</a></li>
+    </ol>
+</div>
+<section id="showcase">
+    <div class="CON">
+        <h1>Having fun to play with Cocktail</h1>
+        <p>Welcome to my cocktail workshop, here you may design your own cocktail that you will like to drink from the internet and the product will be delivered to your hand</p>
+    </div>
+
+</section>
+</div>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+    /*Global*/
+    .CON{
+        width:80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    /*header**/
+    header{
+        background-color: rgb(36, 34, 34);
+        color: ghostwhite;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom:  rgb(58, 218, 242) 5px solid;
+    }
+    
+    header h1{
+        color: rgb(255, 255, 255)230;
+        text-decoration: none;
+        font-size: 30px
+    }
+    header .highlight h1{
+        color: aqua;
+        font-weight: bold;
+        font-size: 16px;
+        float:right;
+    }
+    
+    header #choice{
+        float:right;
+    }
+    
+    
+    header #choice h1{
+        margin: 0;
+    }
+    
+    /*body*/
+    body{
+        overflow: auto;
+    }
+    
+    .container{
+        height: 100%;
+        width: 200px;
+        position: absolute;
+        background: #161616;
+        z-index: 1;
+        transition: 0.5s ease;
+        transform: translateX(-200px);
+    }
+    
+    .container .head{
+        color:coral;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+        background: linear-gradient(30deg, #67595f,#ffffff)
+    }
+    
+    ol{
+        width:100%;
+        list-style: none;
+    }
+    
+    ol li{
+        display: block;
+        width: 100%;
+    }
+    
+    ol li a{
+        color: #fbfdce;
+        padding: 15px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+        letter-spacing: 1px;
+        position: relative;
+        transition: 0.3s;
+        overflow: hidden;
+        text-transform: capitalize;
+    }
+    
+    ol li a i{
+        width: 70px;
+        font-size: 25px;
+        text-align: center;
+        padding-left: 30px; 
+    }
+    
+    ol li:hover a{
+        background: #030303;
+        color: #00eaff;
+        letter-spacing: 5px;
+    }
+    
+    input{
+        appearance: none;
+        visibility: hidden;
+        display: none;
+    }
+    
+    span{
+        position: absolute;
+        right: -40px;
+        top: 30px;
+        font-size: 25px;
+        border-radius: 3px;
+        color: #fff;
+        padding: 3px 8px;
+        cursor: pointer;
+        background: #000;
+    
+    }
+    
+    #bars{
+        background: rgb(15, 14, 14);
+    }
+    
+    #check:checked ~ .container{
+        transform: translateX(0);
+    }
+    
+    #check:checked ~ .container #bars{
+        display: none;
+    }
+    
+    
+    
+    
+    
+    #showcase h1{
+        text-align: center;
+        color: rgb(253, 249, 0);
+        text-transform: uppercase;
+        font-size: 60px;
+    }
+    
+    #showcase{
+        min-height: 600px;
+        background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/221004165915-06-world-best-bars-2022.jpg?c=original&q=w_1280,c_fill");
+        text-align: center;
+        color: rgb(166, 234, 234);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        font-size: 40px;
+    
+    }
+    
+    </style>
+
+</body>
+</html>

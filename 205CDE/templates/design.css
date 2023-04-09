@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*Global*/
+.container4 .CON{
+    width:80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*header**/
+.container4 header{
+    background-color: rgb(36, 34, 34);
+    color: ghostwhite;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom:  rgb(58, 218, 242) 5px solid;
+}
+
+.container4 header h1{
+    color: rgb(255, 255, 255)230;
+    text-decoration: none;
+    font-size: 30px
+}
+.container4 header .highlight h1{
+    color: aqua;
+    font-weight: bold;
+    font-size: 16px;
+    float:right;
+}
+
+.container4 header #choice{
+    float:right;
+}
+
+
+.container4 header #choice h1{
+    margin: 0;
+}
+
+/*body*/
+.container4 {
+    overflow:hidden;
+}
+
+.container4 .container{
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    background: #161616;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(-200px);
+}
+
+.container4 .container .head{
+    color:coral;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    background: linear-gradient(30deg, #67595f,#ffffff)
+}
+
+.container4 ol{
+    width:100%;
+    list-style: none;
+}
+
+.container4 ol li{
+    display: block;
+    width: 100%;
+}
+
+.container4 ol li a{
+    color: #fbfdce;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+.container4 ol li a i{
+    width: 70px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 30px; 
+}
+
+.container4 ol li:hover a{
+    background: #030303;
+    color: #00eaff;
+    letter-spacing: 5px;
+}
+
+.container4 input{
+    appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+.container4 span{
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3px 8px;
+    cursor: pointer;
+    background: #000;
+
+}
+
+#bars{
+    background: rgb(15, 14, 14);
+}
+
+#check:checked ~ .container{
+    transform: translateX(0);
+}
+
+#check:checked ~ .container #bars{
+    display: none;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .3rem 1rem;
+    color: #000;
+    border: .2rem solid #000;
+    border-radius: .3rem;
+    box-shadow: var(--box-shadow);
+    font-size: 1rem;
+    cursor: pointer;
+    background: none;
+
+}
+
+.desinging .swiper-slide img{
+    margin-top: 1rem;
+    display: inline-block;
+    color: #000;
+    border: .2rem solid #000;
+    border-radius: .3rem;
+    box-shadow: var(--box-shadow);
+
+}
+
+.btn:hover{
+    background:var(gray)
+}
+
+.products .product-slider{
+    padding: 1rem;
+
+}
+
+.products .product-slider:first-child{
+    margin-bottom: 2rem;
+    
+}
+
+.products .product-slider .box{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+
+.products .product-slider .box:hover{
+    outline-offset: 0rem;
+    outline: var(--outline-hover);
+}
+
+
+
+.products .product-slider .box h3{
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.products .product-slider .box .price{
+    font-size: 1rem;
+    color: var(--light-color);
+    padding: .5rem 0;
+}
+

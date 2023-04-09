@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I am an alcholic">
+    <meta name="author" content="Kanade(LWT)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <title>Cocktail Talk</title>
+</head>
+<body>
+    <div class="logged">
+    <div class="home">
+    <header>
+        <div class="CON">
+            <div id="choice">
+                <h1>FunCocktail<i class="fas fa-tag"></i></h1>
+            </div>
+        </div>
+    </header>
+
+<input type="checkbox" name="" id="check">
+<div class="container" >
+    <label for="check">
+        <span class="fas fa-times" id="times"></span>
+        <span class="fas fa-bars" id="bars"></span>
+    </label>
+    <div class="head">MENU</div>
+    <ol>
+        <li><a href="home"><i class="fas fa-home"></i>HOME</a></li>
+        <li><a href="about"><i class="fas fa-info"></i>About</a></li>
+        <li><a href="news"><i class="fas fa-newspaper"></i>News</a></li>
+        <li><a href="checkout"><i class="fas fa-car"></i>CheckOut</a></li>
+        <li><a href="design"><i class="fas fa-pen"></i>Design</a></li>
+        <li><a href="help"><i class="fas fa-comment"></i>Help</a></li>
+        <li><a href="login1"><i class="fas fa-user"></i>User</a></li>
+    </ol>
+</div>
+
+</div>
+<div class="coin"></div>
+<div class="container-wrapper">
+    <div class="container10" onmouseover="expandContainer(this)" onmouseout="collapseContainer(this)">
+        <div class="content">
+          <h1>Welcome to our online cocktail shop!</h1>
+          <p>"Whether you're a cocktail enthusiast or a newcomer to the world of mixology, we're thrilled to have you here. Our carefully curated selection of premium spirits, mixers, and cocktail accessories are designed to help you create your perfect drink from the comfort of your own home. From classic recipes to modern twists, our online shop offers a variety of ingredients and tools to help you craft the perfect cocktail for any occasion. So sit back, browse our selection, and let's get shaking!"</p>
+        </div>
+      </div>
+      <div class="container10" onmouseover="expandContainer(this)" onmouseout="collapseContainer(this)">
+        <div class="content">
+          <h1>Presents from us!</h1>
+          <p>"Once you collect 50 coins, you can redeem them for a free can of cocktails of your choice. You can earn coins in two ways: by purchasing a can of cocktail, or by purchasing a bottle of alcohol over 300 HKD, which will earn you 5 coins. Start collecting today and enjoy your favorite cocktails for free!"</p>
+        </div>
+      </div>
+      <div class="container10" onmouseover="expandContainer(this)" onmouseout="collapseContainer(this)">
+        <div class="content">
+          <h1>announcement</h1>
+          <p>"For ordering designed cocktails,please call us to help you, as we will like to provide our best service to our coustomer. also pleasemention your user name before telling us anything.Phone NO.6677 1361,or email us : FunCocktail@gmail.com</p>
+        </div>
+      </div>
+    </div>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+    /*Global*/
+    .CON{
+        width:80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    /*header**/
+    header{
+        background-color: rgb(36, 34, 34);
+        color: ghostwhite;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom:  rgb(58, 218, 242) 5px solid;
+    }
+    
+    header h1{
+        color: rgb(255, 255, 255)230;
+        text-decoration: none;
+        font-size: 30px
+    }
+    header .highlight h1{
+        color: aqua;
+        font-weight: bold;
+        font-size: 16px;
+        float:right;
+    }
+    
+    header #choice{
+        float:right;
+    }
+    
+    
+    header #choice h1{
+        margin: 0;
+    }
+    
+    /*body*/
+    body{
+        overflow: auto;
+        background-image:url(https://images.hdqwalls.com/wallpapers/drink-ice-wine-lf.jpg);
+    }
+    
+    .container{
+        height: 100%;
+        width: 200px;
+        position: absolute;
+        background: #161616;
+        z-index: 1;
+        transition: 0.5s ease;
+        transform: translateX(-200px);
+    }
+    
+    .container .head{
+        color:coral;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+        background: linear-gradient(30deg, #67595f,#ffffff)
+    }
+    
+    ol{
+        width:100%;
+        list-style: none;
+    }
+    
+    ol li{
+        display: block;
+        width: 100%;
+    }
+    
+    ol li a{
+        color: #fbfdce;
+        padding: 15px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+        letter-spacing: 1px;
+        position: relative;
+        transition: 0.3s;
+        overflow: hidden;
+        text-transform: capitalize;
+    }
+    
+    ol li a i{
+        width: 70px;
+        font-size: 25px;
+        text-align: center;
+        padding-left: 30px; 
+    }
+    
+    ol li:hover a{
+        background: #030303;
+        color: #00eaff;
+        letter-spacing: 5px;
+    }
+    
+    input{
+        appearance: none;
+        visibility: hidden;
+        display: none;
+    }
+    
+    span{
+        position: absolute;
+        right: -40px;
+        top: 30px;
+        font-size: 25px;
+        border-radius: 3px;
+        color: #fff;
+        padding: 3px 8px;
+        cursor: pointer;
+        background: #000;
+    
+    }
+    
+    #bars{
+        background: rgb(15, 14, 14);
+    }
+    
+    #check:checked ~ .container{
+        transform: translateX(0);
+    }
+    
+    #check:checked ~ .container #bars{
+        display: none;
+    }
+    
+
+    .container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    }
+
+    .container10 {
+    background-color: #f1f1f18f;
+    border: 1px solid #ff9306;
+    padding: 20px;
+    width: 350px;
+    height: 100px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    transition: height 0.5s;
+    font-size: 15px;
+    }
+
+    .container10.expanded {
+    height: 340px;
+    }
+        
+    .coin {
+        margin-left:900px ;
+        margin-bottom: -50px;
+        width: 50px;
+        height: 50px;
+        background-color: gold;
+        position: relative;
+        animation-name: jump;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        }
+    
+        @keyframes jump {
+        0% {
+            top: 0;
+        }
+        50% {
+            top: -50px;
+        }
+        100% {
+            top: 0;
+        }
+        }
+
+
+    </style>
+
+
+
+    <script>
+        function expandContainer(container) {
+        container.classList.add("expanded");
+        }
+        
+        function collapseContainer(container) {
+        container.classList.remove("expanded");
+        }
+
+        function expandContainer(container) {
+        container.classList.add("expanded");
+        }
+
+        function collapseContainer(container) {
+        container.classList.remove("expanded");
+        }
+            
+    </script>
+</body>
+</html>
